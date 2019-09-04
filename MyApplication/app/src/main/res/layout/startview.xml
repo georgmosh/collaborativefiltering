@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="270dp"
+        android:layout_height="157dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/aeroplane_appl_logo" />
+
+    <EditText
+        android:id="@+id/serverIP"
+        android:maxLength="15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789."
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Server IP"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/port"
+        android:maxLength="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789."
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Port"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/lat"
+        android:maxLength="15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789.-"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Latitude"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/lng"
+        android:maxLength="15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789.-"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Longitude"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="User ID"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/numberOfPois"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:digits="0123456789."
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:background="@drawable/custom_edittext"
+        android:hint="Number of POIS"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Best POIS"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"/>
+
+</LinearLayout>
